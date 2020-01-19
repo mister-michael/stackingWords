@@ -1,6 +1,6 @@
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
-function addExcitement (theWordArray, puncuation, instances) {
+const addExcitement = (theWordArray, puncuation, instances) => {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
