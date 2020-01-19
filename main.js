@@ -1,6 +1,6 @@
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
-function addExcitement (theWordArray, puncuation) {
+function addExcitement (theWordArray, puncuation, instances) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
@@ -17,7 +17,7 @@ function addExcitement (theWordArray, puncuation) {
         buildMeUp += (theWordArray[i] + " ");
         console.log(buildMeUp);
         } else if ((i + 1) % 3 === 0) {
-            buildMeUp += (theWordArray[i]) + puncuation + " ";
+            buildMeUp += (theWordArray[i]) + puncuation.repeat(instances) + " ";
             console.log(buildMeUp);
         }
 
@@ -26,4 +26,4 @@ function addExcitement (theWordArray, puncuation) {
 
 }
 
-addExcitement(sentence, "?");
+addExcitement(sentence, "*", 4);
